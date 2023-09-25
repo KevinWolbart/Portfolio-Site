@@ -1,3 +1,27 @@
+html,
+body {
+  font-family: "Crimson Pro", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h5 {
+  font-family: "Univers LT Std", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+
+a:active, a:focus, a:hover {
+  color: #1c2a40;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 25px;
@@ -49,6 +73,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.row-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
